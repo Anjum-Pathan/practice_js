@@ -40,3 +40,4 @@ console.log(m);
 //splice
 m.splice(2, 3);
 console.log(m);
+//
