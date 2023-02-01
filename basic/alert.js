@@ -18,6 +18,7 @@
 //Q2 in the Q1 use confirm to ask  user if he wants to see the prompt again
 let age = prompt("Enter your age");
 Number.parseInt(age);
+let runagain = true;
 while (runagain) {
   const candrive = (age) => {
     return age >= 18 ? true : false;
