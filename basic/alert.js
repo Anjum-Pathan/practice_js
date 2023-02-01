@@ -16,13 +16,31 @@
 // }
 
 //Q2 in the Q1 use confirm to ask  user if he wants to see the prompt again
+// let age = prompt("Enter your age");
+// Number.parseInt(age);
+// let runagain = true;
+// while (runagain) {
+//   const candrive = (age) => {
+//     return age >= 18 ? true : false;
+//   };
+//   if (candrive(age)) {
+//     alert("you age is less than 18 ");
+//   } else {
+//     alert("you can drive");
+//   }
+//   runagain = confirm("do you want to play again");
+// }
+
+//Q3 use console error the error if thr age in negative
 let age = prompt("Enter your age");
 Number.parseInt(age);
 let runagain = true;
 while (runagain) {
-  const candrive = (age) => {
-    return age >= 18 ? true : false;
-  };
+  if (age <= 0) {
+    console.error("enter correct num");
+    break;
+  }
+
   if (candrive(age)) {
     alert("you age is less than 18 ");
   } else {
