@@ -9,4 +9,7 @@ document.getElementsByTagName(".nav-bar")[0].firstElementChild.style.color =
   "green";
 document.getElementsByTagName(".nav-bar")[0].lastElementChild.style.color =
   "green";
-//
+//Q.4 all the li change background color into red
+Array.from(document.getElementsByTagName("nav")).forEach((element) => {
+  element.style.background = "red";
+});
